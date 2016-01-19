@@ -6,7 +6,7 @@
 
 var zipcode = process.argv.slice(2)
 var request = require("request");
-
+debugger
 request('http://api.openweathermap.org/data/2.5/weather?zip='+ zipcode + ',us&appid=469f9b8828c74cb1f6b76164b7e9e1fc', function (error, response, body){
 	// var weather = JSON.parse(body);
 	if (!error && response.statusCode == 200) {
